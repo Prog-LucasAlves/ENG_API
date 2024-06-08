@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "eng-api"
+version = "0.1.0"
+description = "Criando uma API do zero"
+authors = ["Lucas Alves <lucasalves_taz@hotmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
