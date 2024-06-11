@@ -1,9 +1,9 @@
-name: Script
+name: Script Python(Model)
 
 on: [push]
 
 jobs:
-  run_dataClear:
+  run_script_python:
     runs-on: ubuntu-latest
     steps:
 
@@ -22,3 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install poetry
           poetry install
+
+      - name: Executa script python
+        run: python src/model/model.py
