@@ -10,6 +10,8 @@
 
 A principal característica da API REST é a ausência de estado. A ausência de estado significa que os servidores não salvam dados do cliente entre as solicitações. As solicitações do cliente ao servidor são semelhantes aos URLs que você digita no navegador para visitar um site. A resposta do servidor corresponde a dados simples, sem a renderização gráfica típica de uma página da Web.
 
+## --
+
 - Para realizar esse projeto utilizaremos a biblioteca [FastAPI](https://fastapi.tiangolo.com/).
 
 - Como exemplo será criando um api de um modelo de machine learnig(Com Deploy).
