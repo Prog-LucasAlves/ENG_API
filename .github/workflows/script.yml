@@ -24,4 +24,4 @@ jobs:
           poetry install
 
       - name: Executa script python
-        run: python src/model/model.py
+        run: python SRC/model/model.py
