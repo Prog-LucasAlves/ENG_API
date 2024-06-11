@@ -25,8 +25,8 @@ jobs:
       - name: Execução script python
         run: python SRC/model/model.py
 
-      - name: Upload math result for job 2
-        uses: actions/upload-artifact@v4
-        with:
-          name: homework_final
-          path: model.pkl
+      - name: Realiza commit and push
+        run: |
+          git add .
+          git commit -m "up model.pkl"
+          git push
