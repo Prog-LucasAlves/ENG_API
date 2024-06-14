@@ -7,11 +7,13 @@ license = "MIT"
 readme = "README.md"
 
 [tool.poetry.dependencies]
-python = "^3.12"
-pre-commit = "^3.7.1"
+python = "3.12.*"
 numpy = "^1.26.4"
 scikit-learn = "^1.5.0"
 
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^3.7.1"
 
 [build-system]
 requires = ["poetry-core"]
