@@ -15,3 +15,7 @@ A principal característica da API REST é a ausência de estado. A ausência de
 - Para realizar esse projeto utilizarei a biblioteca [FastAPI](https://fastapi.tiangolo.com/).
 
 - Como exemplo será criando um api de um modelo de machine learnig(Com Deploy).
+
+##
+
+## ![API ON](https://eng-api-e8wg.onrender.com/docs) API ON | :construction:
