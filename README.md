@@ -16,6 +16,20 @@ A principal característica da API REST é a ausência de estado. A ausência de
 
 - Como exemplo será criando um api de um modelo de machine learnig(Com Deploy).
 
+- Estrutura do projeto:
+
+´´´bash
+├───.github
+│      └───workflows         # CI
+├───SRC
+     ├───api                 # Pasta dos arquivos para criar a API
+     ├───frontend            # Pasta dos arquivos para criar o dashboard
+     ├───model               # Pasta dos arquivos para cirar o modelo
+├───.gitignore               # Arquivo com pastas/arquivos/extensões ignorados pelo git
+├───.pre-commit-config.yaml  # Arquivo com as configurações a serem utilizadas no git commit
+├───.python-version          # Versão utilizada no projeto
+´´´
+
 ##
 
 - Link para API -> [aqui](https://eng-api-e8wg.onrender.com/docs) | :construction:
