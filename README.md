@@ -16,9 +16,10 @@ A principal característica da API REST é a ausência de estado. A ausência de
 
 - Como exemplo será criando um api de um modelo de machine learnig(Com Deploy).
 
-- Estrutura do projeto:
+> [!NOTE]
+> Estrutura do Projeto
 
-´´´bash
+```bash
 ├───.github
 │      └───workflows         # CI
 ├───SRC
@@ -28,7 +29,7 @@ A principal característica da API REST é a ausência de estado. A ausência de
 ├───.gitignore               # Arquivo com pastas/arquivos/extensões ignorados pelo git
 ├───.pre-commit-config.yaml  # Arquivo com as configurações a serem utilizadas no git commit
 ├───.python-version          # Versão utilizada no projeto
-´´´
+```
 
 ##
 
