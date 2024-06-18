@@ -12,7 +12,7 @@ database = os.getenv("Database")
 host = os.getenv("External_Database_URL")
 
 DATABASE_URL = f"postgresql://{username}:{password}@{host}:5432/{database}"
-print(DATABASE_URL)
+
 engine = create_engine(DATABASE_URL, echo=True)
 
 BASE = declarative_base()
