@@ -1,8 +1,8 @@
 from sqlalchemy import Column, Integer
-from .database import Base
+from .database import BASE
 
 
-class User(Base):
+class User(BASE):
     __tablename__ = "Dadapredict"
 
     id = Column(Integer, primary_key=True, index=True)
