@@ -21,6 +21,19 @@ pydantic = "^2.7.4"
 pre-commit = "^3.7.1"
 python-dotenv = "^1.0.1"
 
+[tool.ruff.lint]
+preview = true
+select = ['I', 'F', 'E', 'W', 'PL', 'PT']
+
+[tool.ruff.format]
+preview = true
+quote-style = 'single'
+
+[tool.taskipy.tasks]
+run = 'fastapi dev fast_zero/app.py'
+test = 'pytest -s -x --cov=fast_zero -vv'
+post_test = 'coverage html'
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
