@@ -52,3 +52,4 @@ print(f'MSE:, {mse}')
 # Salvando o modelo treinado
 joblib.dump(model, './model.pkl')
 # joblib.dump(model, "../../model.pkl")
+
