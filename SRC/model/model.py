@@ -50,4 +50,5 @@ mse = mean_squared_error(y_test, y_pred)
 print(f'MSE:, {mse}')
 
 # Salvando o modelo treinado
-joblib.dump(model, './SRC/model/model.pkl')
+joblib.dump(model, './model.pkl')
+# joblib.dump(model, "../../model.pkl")
