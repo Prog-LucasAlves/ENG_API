@@ -35,7 +35,7 @@ A principal característica da API REST é a ausência de estado. A ausência de
 
 - Link para API -> [aqui](https://eng-api-e8wg.onrender.com/docs) | :construction:
 
-## ![CRED](https://cdn-icons-png.flaticon.com/24/7178/7178894.png) Créditos pelo aprendizado e inspiração para criação de simplório projeto
+## ![CRED](https://cdn-icons-png.flaticon.com/24/7178/7178894.png) Créditos pelo aprendizado e inspiração para criação desse projeto
 
 - [x] Jornada de Dados | Luciano Galvão [youtube](https://www.youtube.com/@lvgalvaofilho).
 - [x] Curso -> FastAPI do Zero [link](https://fastapidozero.dunossauro.com/) | Dunossauro [youtube](https://www.youtube.com/@Dunossauro).
