@@ -2,7 +2,6 @@ from sqlalchemy import Column, Float, Integer
 
 from .database import BASE
 
-
 class Datavar(BASE):
     __tablename__ = 'Datavar'
 
