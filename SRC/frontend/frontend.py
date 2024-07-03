@@ -15,6 +15,6 @@ st.set_page_config(
 st.title('House Price Prediction')
 
 tamanho = st.number_input(
-    'Tamanho (em m²)', min_value=20.0, max_value=500.0, value=100.0
+    'Tamanho (em m²)', min_value=20, max_value=500, value=100, label_visibility='hidden'
 )
 st.write('The current number is ', tamanho)
