@@ -33,7 +33,8 @@ A principal característica da API REST é a ausência de estado. A ausência de
 
 ##
 
-- Link para API -> [aqui](https://eng-api-e8wg.onrender.com/docs) | :construction:
+- Link API -> [aqui](https://eng-api-e8wg.onrender.com/docs) | :construction:
+- Link Deploy -> [aqui](https://deploy-api-kvp5.onrender.com) | :construction:
 
 ## ![CRED](https://cdn-icons-png.flaticon.com/24/7178/7178894.png) Créditos pelo aprendizado e inspiração para criação desse projeto
 
