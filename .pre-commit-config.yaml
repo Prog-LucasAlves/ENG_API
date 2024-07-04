@@ -18,7 +18,8 @@ repos:
     hooks:
     -   id: pytest-check
         name: pytest-check
-        entry: pytest
+        entry: python -m pytest -v ./SRC/tests/
         language: system
+        types: [ python ]
         pass_filenames: false
         always_run: true
