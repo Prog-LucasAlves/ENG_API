@@ -6,11 +6,19 @@ repos:
     -   id: end-of-file-fixer
     -   id: trailing-whitespace
     -   id: check-toml
-- repo: https://github.com/astral-sh/ruff-pre-commit
-  rev: v0.4.9
-  hooks:
+-   repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.4.9
+    hooks:
     -   id: ruff
         types_or: [ python ]
         args: [ --fix ]
     -   id: ruff-format
         types_or: [ python ]
+-   repo: local
+    hooks:
+    -   id: pytest-check
+        name: pytest-check
+        entry: pytest
+        language: system
+        pass_filenames: false
+        always_run: true
