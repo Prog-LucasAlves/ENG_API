@@ -5,7 +5,7 @@ st.set_page_config(page_title='Prediction', page_icon='🏠')
 
 st.title('House Price Prediction')
 st.subheader('', divider='red')
-st.divider('red')
+st.divider()
 
 col1, col2, col3 = st.columns(3)
 
