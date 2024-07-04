@@ -28,7 +28,9 @@ A principal característica da API REST é a ausência de estado. A ausência de
      ├───model               # Pasta dos arquivos para cirar o modelo
 ├───.gitignore               # Arquivo com pastas/arquivos/extensões ignorados pelo git
 ├───.pre-commit-config.yaml  # Arquivo com as configurações a serem utilizadas no git commit
-├───.python-version          # Versão utilizada no projeto
+├───.python-version          # Versão do Python utilizada no projeto
+├───.pyproject.toml          # Bibliotecas Python utilizadas no projeto
+├───README.md                # Documentação do projeto
 ```
 
 ##
