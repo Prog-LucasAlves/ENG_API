@@ -31,4 +31,4 @@ if st.button('Prever'):
     )
     st.write(res.json())
     prediction = res.json()
-    st.write(f'Preço previsto: R$ {prediction["prediction"]:.2f}')
+    st.write(f'Preço previsto: R$ {prediction}')
