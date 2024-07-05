@@ -5,7 +5,6 @@ st.set_page_config(page_title='Prediction', page_icon='🏠')
 
 st.title('House Price Prediction')
 st.subheader('', divider='red')
-st.divider()
 
 col1, col2, col3 = st.columns(3)
 
@@ -27,5 +26,9 @@ with col3:
 
 if st.button('Prever'):
     input_data = [tamanho, quartos, vagas]
-    res = requests.post('XXXXXXXXXXXXXXXXXXXXXXXXXXXXX', json={'input': input_data})
+    res = requests.post(
+        'https://eng-api-e8wg.onrender.com/predict/', json={'input': input_data}
+    )
     st.write(res.json())
+    prediction = res.json()
+    st.write(f'Preço previsto: R$ {prediction["prediction"]:.2f}')
