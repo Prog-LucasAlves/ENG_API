@@ -1,3 +1,5 @@
+import json
+
 import requests
 import streamlit as st
 
@@ -27,8 +29,8 @@ with col3:
 if st.button('Prever'):
     input_data = [tamanho, quartos, vagas]
     res = requests.post(
-        'https://eng-api-e8wg.onrender.com/predict/', json={'input': input_data}
+        'https://eng-api-e8wg.onrender.com/predict/', data=json.dumps(input_data)
     )
-    st.write(res.json())
     prediction = res.json()
     st.write(f'Preço previsto: R$ {prediction}')
+    st.write(f'Preço previsto: R$ {res.text}')
