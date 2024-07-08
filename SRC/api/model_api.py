@@ -29,7 +29,7 @@ def index():
 
 @app.post('/predict/', status_code=HTTPStatus.CREATED)
 def predict(datavar: schemas.DataPredcit, db: Session = Depends(Acessdb)):
-    features = [[datavar.tamanho, datavar.quartos, datavar.vagas]]
+    features = [datavar.tamanho, datavar.quartos, datavar.vagas]
     preco_estimado = modelo.predict(features)[0]
     actions.insertDataVar(db=db, data=datavar)
     return {'preco_estimado': round(preco_estimado, 2)}
