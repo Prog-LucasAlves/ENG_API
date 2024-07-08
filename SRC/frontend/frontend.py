@@ -29,6 +29,6 @@ if st.button('Prever'):
     response = requests.post(
         'https://eng-api-e8wg.onrender.com/predict/', json={'features': features}
     )
-    prediction = response.json()['preco_estimado']
+    prediction = response.json()
     st.success(f'Preço previsto: R$ {prediction}', icon='��')
     st.write(f'Preço previsto: R$ {prediction}')
