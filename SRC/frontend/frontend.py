@@ -25,8 +25,7 @@ with col3:
     st.write('The current number is ', vagas)
 
 if st.button('Prever'):
-    features = [tamanho, quartos, vagas]
-    payload = {'tamanho': tamanho, 'quartos': quartos, 'vagas': vagas}
+    features = [[tamanho, quartos, vagas]]
     response = requests.post(
         'https://eng-api-e8wg.onrender.com/predict/', json={'features': features}
     )
