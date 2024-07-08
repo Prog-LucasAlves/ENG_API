@@ -25,7 +25,10 @@ with col3:
     st.write('The current number is ', vagas)
 
 if st.button('Prever'):
-    input_data = {'dados_entrada': [tamanho, quartos, vagas]}
-    res = requests.post('https://eng-api-e8wg.onrender.com/predict', json=input_data)
-    prediction = res.json()
+    features = [tamanho, quartos, vagas]
+    response = requests.post(
+        'https://eng-api-e8wg.onrender.com/predict', json={'features': features}
+    )
+    prediction = response.json()['preco_estimado']
+    st.success(f'Preço previsto: R$ {prediction}', icon='��')
     st.write(f'Preço previsto: R$ {prediction}')
