@@ -27,7 +27,7 @@ def index():
     return {'message': 'API is running'}
 
 
-@app.post('/predict', status_code=HTTPStatus.CREATED)
+@app.post('/predict/', status_code=HTTPStatus.CREATED)
 def predict(datavar: schemas.DataPredcit, db: Session = Depends(Acessdb)):
     dados_entrada = [[datavar.tamanho, datavar.quartos, datavar.vagas]]
     preco_estimado = modelo.predict(dados_entrada)[0]
