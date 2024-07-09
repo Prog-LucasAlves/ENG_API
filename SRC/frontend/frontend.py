@@ -27,8 +27,16 @@ with col3:
 if st.button('Prever'):
     features = [[tamanho, quartos, vagas]]
     response = requests.post(
-        'https://eng-api-e8wg.onrender.com/predict/', json={'features': features}
+        'https://eng-api-e8wg.onrender.com/predict/ \
+           accept: application/json \
+           Content-Type: application/json \
+            { \
+            "tamanho": 100, \
+            "quartos": 1, \
+            "vagas": 0, \
+            }'
     )
+
     prediction = response.json()
     st.success(f'Preço previsto: R$ {prediction}')
     st.write(f'Preço previsto: R$ {prediction}')
