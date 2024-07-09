@@ -32,8 +32,8 @@ if st.button('Prever'):
            Content-Type: application/json \
             {
             "tamanho": {tamanho}, \
-            "quartos": {1}, \
-            "vagas": {0}, \
+            "quartos": {quartos}, \
+            "vagas": {vagas}, \
         
         }'
     )
