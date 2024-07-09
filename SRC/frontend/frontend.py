@@ -25,11 +25,12 @@ with col3:
     st.write('The current number is ', vagas)
 
 if st.button('Prever'):
-    features = [[tamanho, quartos, vagas]]
-    response = requests.post(
-        'https://eng-api-e8wg.onrender.com/predict/', json={'data': features}
-    )
-
+    data = {
+        'tamanho': tamanho,
+        'quartos': quartos,
+        'vagas': vagas,
+    }
+    response = requests.post('https://eng-api-e8wg.onrender.com/predict/', json=data)
     prediction = response.json()
-    st.success(f'Preço previsto: R$ {prediction['preco_estimado']}')
+    st.success(f'Preço previsto: R$ {prediction['prediction']}')
     st.balloons()
