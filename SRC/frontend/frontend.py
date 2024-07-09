@@ -31,11 +31,11 @@ if st.button('Prever'):
            accept: application/json \
            Content-Type: application/json \
             {
-            "tamanho": int{tamanho}, \
-            "quartos": int{quartos}, \
-            "vagas": int{vagas}, \
+            "tamanho": 100, \
+            "quartos": 20, \
+            "vagas": 1, \
         }'
     )
 
     prediction = response.json()
-    st.success(f'Preço previsto: R$ {prediction}')
+    st.success(f'Preço previsto: R$ {prediction['preco_estimado']}')
