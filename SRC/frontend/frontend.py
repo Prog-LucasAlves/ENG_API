@@ -34,6 +34,7 @@ if st.button('Prever'):
             "tamanho": {tamanho}, \
             "quartos": {quartos}, \
             "vagas": {vagas}, \
+        
         }'
     )
 
