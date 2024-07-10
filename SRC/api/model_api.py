@@ -1,11 +1,10 @@
 from http import HTTPStatus
 
 import joblib
-from fastapi import Depends, FastAPI
-from sqlalchemy.orm import Session
+from fastapi import FastAPI
 
-from . import actions, models, schemas
-from .database import SessionLocal, engine
+from . import models, schemas
+from .database import engine
 
 models.BASE.metadata.create_all(bind=engine)
 
@@ -13,13 +12,14 @@ app = FastAPI()
 
 modelo = joblib.load('model.pkl')
 
-
+"""
 def Acessdb():
     db = SessionLocal()
     try:
         yield db
     finally:
         db.close()
+"""
 
 
 @app.get('/', status_code=HTTPStatus.OK, response_model=schemas.DataMessage)
@@ -28,10 +28,9 @@ def index():
 
 
 @app.post('/predict', status_code=HTTPStatus.CREATED)
-def predict(data: schemas.DataPredcit, db: Session = Depends(Acessdb)):
+def predict(data: schemas.DataPredcit):
     input_data = [[data.tamanho, data.quartos, data.vagas]]
     predicition = modelo.predict(input_data)
-    actions.insertData(db=db, data=data)
     return {'prediction': predicition[0]}
 
 
