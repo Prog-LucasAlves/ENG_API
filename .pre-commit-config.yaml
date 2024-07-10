@@ -16,9 +16,9 @@ repos:
         types_or: [ python ]
 -   repo: local
     hooks:
-    -   id: pytest-check
-        name: pytest-check
-        entry: python -m pytest -v ./SRC/tests/
+    -   id: pytest
+        name: pytest
+        entry: pytest
         language: system
         types: [ python ]
         pass_filenames: false
