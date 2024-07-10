@@ -32,5 +32,5 @@ if st.button('Prever'):
     }
     response = requests.post('https://eng-api-e8wg.onrender.com/predict/', json=data)
     prediction = response.json()
-    st.success(f'Preço previsto: R$ {prediction['prediction']:,.2f}')
+    st.success(f'Preço previsto: R$ {prediction['prediction']}')
     st.balloons()
