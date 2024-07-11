@@ -5,7 +5,7 @@ from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
 
 # Carregando os dados
-data = pd.read_csv('./data/data.csv', sep=';')
+data = pd.read_csv('./data.csv', sep=';')
 
 # Separando dataset(Variáveis preditoras e target)
 X = data.drop('total', axis=1)
