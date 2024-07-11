@@ -6,7 +6,7 @@
 
 ## ![API REST](https://cdn-icons-png.flaticon.com/24/9610/9610562.png) O que são APIs REST?
 
-- Uma API REST (Representational State Transfer) é um estilo de arquitetura para a criação de serviços web que permite a comunicação entre sistemas via HTTP. Ela se baseia em princípios simples e padrões que facilitam o desenvolvimento, a escalabilidade e a manutenção dos serviços. Aqui estão alguns dos principais conceitos e características de uma API REST:
+- Uma **API REST** (Representational State Transfer) é um estilo de arquitetura para a criação de serviços web que permite a comunicação entre sistemas via HTTP. Ela se baseia em princípios simples e padrões que facilitam o desenvolvimento, a escalabilidade e a manutenção dos serviços. Aqui estão alguns dos principais conceitos e características de uma API REST:
 
 1. **Recursos (Resources)**: Tudo em uma API REST é considerado um recurso, que é identificado por um URL único. Por exemplo, em uma API de gerenciamento de usuários, um recurso pode ser um usuário específico identificado por /usuarios/1.
 
@@ -27,7 +27,7 @@
 
 7. **Cliente-Servidor**: A arquitetura REST separa as responsabilidades entre o cliente e o servidor, permitindo que eles evoluam independentemente.
 
-- Exemplo de Endpoints em uma API REST
+- __Exemplo de Endpoints em uma API REST__
 
 1. Vamos supor que estamos criando uma API para gerenciar uma lista de tarefas:
 
@@ -41,7 +41,7 @@ Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar 
 
 ![IMAGE](https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png)
 
-##
+## ![INFO](https://cdn-icons-png.flaticon.com/24/7627/7627546.png) Informações do Projeto
 
 - Para realizar esse projeto utilizarei a biblioteca [FastAPI](https://fastapi.tiangolo.com/).
 
@@ -67,7 +67,7 @@ Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar 
 ├───requirements.txt         # Bibliotecas Python utilizadas no CI -> workflows
 ```
 
-## ![Projeto](https://cdn-icons-png.flaticon.com/24/2721/2721286.png) Como Estruturar o Projeto
+## ![PROJETO](https://cdn-icons-png.flaticon.com/24/2721/2721286.png) Como Estruturar o Projeto
 
 ### Python
 
@@ -88,12 +88,26 @@ cd ENG_API
 git clone https://github.com/Prog-LucasAlves/ENG_API
 ```
 
-##
+## Criando ambiente virtual(poetry)
+
+Ref.: [poetry](https://python-poetry.org/)
+
+```bash
+poetry shell
+```
+
+## Instalando as dependências do projeto
+
+```bash
+poetry install
+```
+
+## ![LINK](https://cdn-icons-png.flaticon.com/24/2696/2696513.png) Links
 
 - Link API -> [aqui](https://eng-api-e8wg.onrender.com/docs) | :construction:
 - Link Deploy -> [aqui](https://deploy-api-kvp5.onrender.com) | :construction:
 
-## ![CRED](https://cdn-icons-png.flaticon.com/24/7178/7178894.png) Créditos pelo aprendizado e inspiração para criação desse projeto
+## ![CRED](https://cdn-icons-png.flaticon.com/24/7178/7178894.png) Créditos pelo Aprendizado e Inspiração para Criação Desse Projeto
 
 - [x] Jornada de Dados | Luciano Galvão [youtube](https://www.youtube.com/@lvgalvaofilho).
 - [x] Curso -> FastAPI do Zero [link](https://fastapidozero.dunossauro.com/) | Dunossauro [youtube](https://www.youtube.com/@Dunossauro).
