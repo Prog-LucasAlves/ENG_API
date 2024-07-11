@@ -5,7 +5,7 @@ import streamlit as st
 st.set_page_config(page_title='Prediction', page_icon='🏠')
 
 # Descrição da aplicação.
-st.title('House Price Prediction')
+st.title('House Rent Prediction')
 st.subheader('', divider='red')
 
 # Criando colunas aonde serão inseridos os dados.
