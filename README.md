@@ -38,7 +38,9 @@
 - [x] DELETE /tarefas/{id}: Deleta uma tarefa específica.
 Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar e integráveis com diversas plataformas e linguagens de programação.
 
-![ ]()
+<img src="https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png" width="50%">
+
+![ ](https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png)
 
 ##
 
@@ -65,6 +67,8 @@ Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar 
 ├───README.md                # Documentação do projeto
 ├───requirements.txt         # Bibliotecas Python utilizadas no CI -> workflows
 ```
+
+## ![Projeto](https://cdn-icons-png.flaticon.com/512/2721/2721286.png) Como Estruturar o Projeto
 
 ##
 
