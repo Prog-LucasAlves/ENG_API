@@ -1,11 +1,14 @@
 import requests
 import streamlit as st
 
+# Título da página.
 st.set_page_config(page_title='Prediction', page_icon='🏠')
 
+# Descrição da aplicação.
 st.title('House Price Prediction')
 st.subheader('', divider='red')
 
+# Criando colunas aonde serão inseridos os dados.
 col1, col2, col3 = st.columns(3)
 
 with col1:
@@ -24,13 +27,16 @@ with col3:
     )
     st.write('The current number is ', vagas)
 
+# Botão para realizar a previsão da aplicação
 if st.button('Prever'):
     data = {
         'tamanho': tamanho,
         'quartos': quartos,
         'vagas': vagas,
     }
+    # Acessando a api para realizar a previsão com os dados coletados
     response = requests.post('https://eng-api-e8wg.onrender.com/predict/', json=data)
     prediction = response.json()
     st.success(f'Preço previsto: R$ {prediction['prediction']:,.2f}')
     st.balloons()
+    st.subheader('', divider='red')
