@@ -10,7 +10,7 @@
 
 1. **Recursos (Resources)**: Tudo em uma API REST é considerado um recurso, que é identificado por um URL único. Por exemplo, em uma API de gerenciamento de usuários, um recurso pode ser um usuário específico identificado por /usuarios/1.
 
-2. **Verbos HTTP**: A interação com os recursos é feita usando verbos HTTP, como.
+2. **Verbos HTTP**: A interação com os recursos é feita usando verbos HTTP, como:
 - GET: Para recuperar informações de um recurso.
 - POST: Para criar um novo recurso.
 - PUT: Para atualizar um recurso existente.
@@ -36,11 +36,10 @@
 - [x] POST /tarefas: Cria uma nova tarefa.
 - [x] PUT /tarefas/{id}: Atualiza uma tarefa específica.
 - [x] DELETE /tarefas/{id}: Deleta uma tarefa específica.
+
 Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar e integráveis com diversas plataformas e linguagens de programação.
 
-<img src="https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png" width="50%">
-
-![ ](https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png)
+![IMAGE](https://github.com/Prog-LucasAlves/ENG_API/blob/main/SRC/image/API_REST.png)
 
 ##
 
@@ -68,7 +67,26 @@ Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar 
 ├───requirements.txt         # Bibliotecas Python utilizadas no CI -> workflows
 ```
 
-## ![Projeto](https://cdn-icons-png.flaticon.com/512/2721/2721286.png) Como Estruturar o Projeto
+## ![Projeto](https://cdn-icons-png.flaticon.com/24/2721/2721286.png) Como Estruturar o Projeto
+
+### Python
+
+- Versão do python utilizada: **3.12.2** | atraves do *pyenv*
+- Arguivo .python-version
+Ref.: [pyenv](https://github.com/pyenv/pyenv)
+
+### Criando o diretório para o projeto
+
+```bash
+mkdir ENG_API
+cd ENG_API
+```
+
+### Clonando o repositório
+
+```bash
+git clone https://github.com/Prog-LucasAlves/ENG_API
+```
 
 ##
 
