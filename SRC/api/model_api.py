@@ -29,7 +29,7 @@ def index():
 
 @app.post('/predict', status_code=HTTPStatus.CREATED)
 def predict(data: schemas.DataPredcit, db: Session = Depends(Acessdb)):
-    input_data = [[data.tamanho, data.quartos, data.vagas]]
+    input_data = [[data.tamanho, data.quartos, data.banheiros, data.vagas]]
     actions.insertDataVar(db=db, data=data)
     predicition = modelo.predict(input_data)
     return {'prediction': predicition[0]}
