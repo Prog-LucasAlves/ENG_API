@@ -21,6 +21,25 @@
 
 4. **Stateless**: Cada requisição de um cliente para o servidor deve conter todas as informações necessárias para entender e processar o pedido. O servidor não deve armazenar nenhum estado sobre o cliente entre as requisições.
 
+5. **Cacheable**: As respostas devem informar se podem ser armazenadas em cache para otimizar o desempenho.
+
+6. **Uniform Interface**: Um conjunto uniforme de regras e convenções que permite a interação padronizada com a API, facilitando a compreensão e o uso da API por diferentes clientes.
+
+7. **Cliente-Servidor**: A arquitetura REST separa as responsabilidades entre o cliente e o servidor, permitindo que eles evoluam independentemente.
+
+- Exemplo de Endpoints em uma API REST
+
+1. Vamos supor que estamos criando uma API para gerenciar uma lista de tarefas:
+
+- [x] GET /tarefas: Retorna uma lista de todas as tarefas.
+- [x] GET /tarefas/{id}: Retorna uma tarefa específica.
+- [x] POST /tarefas: Cria uma nova tarefa.
+- [x] PUT /tarefas/{id}: Atualiza uma tarefa específica.
+- [x] DELETE /tarefas/{id}: Deleta uma tarefa específica.
+Ao seguir esses princípios e práticas, as APIs REST se tornam fáceis de usar e integráveis com diversas plataformas e linguagens de programação.
+
+![ ]()
+
 ##
 
 - Para realizar esse projeto utilizarei a biblioteca [FastAPI](https://fastapi.tiangolo.com/).
