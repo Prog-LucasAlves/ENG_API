@@ -6,15 +6,27 @@
 
 ## ![API REST](https://cdn-icons-png.flaticon.com/24/9610/9610562.png) O que são APIs REST?
 
-- REST significa Transferência Representacional de Estado. REST define um conjunto de funções como GET, PUT, DELETE e assim por diante, que os clientes podem usar para acessar os dados do servidor. Clientes e servidores trocam dados usando HTTP.
+- Uma API REST (Representational State Transfer) é um estilo de arquitetura para a criação de serviços web que permite a comunicação entre sistemas via HTTP. Ela se baseia em princípios simples e padrões que facilitam o desenvolvimento, a escalabilidade e a manutenção dos serviços. Aqui estão alguns dos principais conceitos e características de uma API REST:
 
-A principal característica da API REST é a ausência de estado. A ausência de estado significa que os servidores não salvam dados do cliente entre as solicitações. As solicitações do cliente ao servidor são semelhantes aos URLs que você digita no navegador para visitar um site. A resposta do servidor corresponde a dados simples, sem a renderização gráfica típica de uma página da Web.
+1. **Recursos (Resources)**: Tudo em uma API REST é considerado um recurso, que é identificado por um URL único. Por exemplo, em uma API de gerenciamento de usuários, um recurso pode ser um usuário específico identificado por /usuarios/1.
+
+2. **Verbos HTTP**: A interação com os recursos é feita usando verbos HTTP, como.
+- GET: Para recuperar informações de um recurso.
+- POST: Para criar um novo recurso.
+- PUT: Para atualizar um recurso existente.
+- DELETE: Para deletar um recurso.
+- PATCH: Para atualizar parcialmente um recurso.
+
+3. **Representações (Representations)**: Um recurso pode ter várias representações, como JSON, XML, HTML, entre outros. JSON é o formato mais comum usado em APIs REST.
+
+4. **Stateless**: Cada requisição de um cliente para o servidor deve conter todas as informações necessárias para entender e processar o pedido. O servidor não deve armazenar nenhum estado sobre o cliente entre as requisições.
 
 ##
 
 - Para realizar esse projeto utilizarei a biblioteca [FastAPI](https://fastapi.tiangolo.com/).
 
-- Como exemplo será criando um api de um modelo de machine learnig(Com Deploy).
+> [!TIP]
+> Como exemplo será criando um api de um modelo de machine learning para realizar predição do aluguel de casas/apartamentos(Com Deploy).
 
 > [!NOTE]
 > Estrutura do Projeto
@@ -26,11 +38,13 @@ A principal característica da API REST é a ausência de estado. A ausência de
      ├───api                 # Pasta dos arquivos para criar a API
      ├───frontend            # Pasta dos arquivos para criar o dashboard
      ├───model               # Pasta dos arquivos para cirar o modelo
+     ├───tests               # Pasta dos arquivos de testes
 ├───.gitignore               # Arquivo com pastas/arquivos/extensões ignorados pelo git
 ├───.pre-commit-config.yaml  # Arquivo com as configurações a serem utilizadas no git commit
 ├───.python-version          # Versão do Python utilizada no projeto
 ├───.pyproject.toml          # Bibliotecas Python utilizadas no projeto
 ├───README.md                # Documentação do projeto
+├───requirements.txt         # Bibliotecas Python utilizadas no CI -> workflows
 ```
 
 ##
