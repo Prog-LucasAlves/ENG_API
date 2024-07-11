@@ -8,6 +8,7 @@ class DataMessage(BaseModel):
 class DataPredcit(BaseModel):
     tamanho: int
     quartos: int
+    banheiros: int
     vagas: int
 
 
