@@ -24,5 +24,6 @@ def selectDataVar(db: Session):
         for item in data
     ]
     df = pd.DataFrame(select_data)
-    csv_file_path = 'data_var.csv'
-    df.to_csv(csv_file_path, index=False)
+    return df
+    # csv_file_path = 'data_var.csv'
+    # df.to_csv(csv_file_path, index=False)
