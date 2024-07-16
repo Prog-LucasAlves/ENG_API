@@ -22,10 +22,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Execução script python
+      - name: Execução script python (model.py)
         run: python SRC/model/model.py
 
       - name: Realiza commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "up model.pkl"
+
+      - name: Execução script python (collect_data.py)
+        run: python SRC/api/collect_data.py
+
+      - name: Realiza commit and push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "up data_var.csv"
