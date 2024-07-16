@@ -1,6 +1,6 @@
+# from .database import BASE
+from database import BASE
 from sqlalchemy import Column, Integer
-
-from .database import BASE
 
 
 class Datavar(BASE):
