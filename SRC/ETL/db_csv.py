@@ -45,3 +45,7 @@ def selectDataVar(db=SessionLocal()):
     ]
     df = pd.DataFrame(select_data)
     df.to_csv('./data_var.csv', index=False)
+
+
+if __name__ == '__main__':
+    selectDataVar()
