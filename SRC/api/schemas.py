@@ -10,7 +10,3 @@ class DataPredcit(BaseModel):
     quartos: int
     banheiros: int
     vagas: int
-
-
-class DataPredcitResponse(BaseModel):
-    preco_estimado: float
