@@ -22,6 +22,17 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Load environment variables from .env
+        run: |
+          cat .env | grep -v '^#' | grep -v '^$' | while IFS= read -r line
+          do
+          echo "$line" >> $GITHUB_ENV
+          done
+
+      - name: Run your application
+        run: |
+          echo "Database URL is $url"
+
       - name: Execução script python (model.py)
         run: python SRC/model/model.py
 
