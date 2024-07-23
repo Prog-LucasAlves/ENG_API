@@ -12,8 +12,8 @@ database = os.getenv('Database')
 host = os.getenv('External_Database_URL')
 url = os.getenv('url')
 
-# DATABASE_URL = f'{url}'
-DATABASE_URL = f'postgresql://{username}:{password}@{host}:5432/{database}'
+DATABASE_URL = f'{url}'
+# DATABASE_URL = f'postgresql://{username}:{password}@{host}:5432/{database}'
 
 engine = create_engine(DATABASE_URL, echo=True)
 
@@ -45,3 +45,7 @@ def selectDataVar(db=SessionLocal()):
     ]
     df = pd.DataFrame(select_data)
     df.to_csv('./data_var.csv', index=False)
+
+
+if __name__ == '__main__':
+    selectDataVar()
