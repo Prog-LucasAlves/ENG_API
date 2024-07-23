@@ -22,16 +22,12 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Load environment variables from .env
+      - name: Use secret in a script
+        env:
+          SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
         run: |
-          cat .env | grep -v '^#' | grep -v '^$' | while IFS= read -r line
-          do
-          echo "$line" >> $GITHUB_ENV
-          done
-
-      - name: Run your application
-        run: |
-          echo "Database URL is $Database"
+            echo "Using the secret key..."
+            echo $SECRET_KEY
 
       - name: Execução script python (model.py)
         run: python SRC/model/model.py
