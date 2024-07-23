@@ -6,14 +6,14 @@ from sqlalchemy import Column, Integer, create_engine
 from sqlalchemy.orm import declarative_base, sessionmaker
 
 load_dotenv()
-username = os.getenv('Name')
-password = os.getenv('Password')
-database = os.getenv('Database')
-host = os.getenv('External_Database_URL')
-url = os.getenv('url')
+username = os.getenv('PGUSER')
+password = os.getenv('PGPASSWORD')
+database = os.getenv('PGDATABASE')
+host = os.getenv('PGHOST')
+# url = os.getenv('url')
 
-DATABASE_URL = f'{url}'
-# DATABASE_URL = f'postgresql://{username}:{password}@{host}:5432/{database}'
+# DATABASE_URL = f'{url}'
+DATABASE_URL = f'postgresql://{username}:{password}@{host}:5432/{database}'
 
 engine = create_engine(DATABASE_URL, echo=True)
 
