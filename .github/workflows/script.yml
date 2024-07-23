@@ -31,7 +31,7 @@ jobs:
 
       - name: Run your application
         run: |
-          echo "Database URL is $url"
+          echo "Database URL is $Database"
 
       - name: Execução script python (model.py)
         run: python SRC/model/model.py
