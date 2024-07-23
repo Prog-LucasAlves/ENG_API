@@ -22,13 +22,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Use secret in a script
-        env:
-          SECRET_KEY: ${{ secrets.MY_SECRET_KEY }}
-        run: |
-            echo "Using the secret key..."
-            echo $SECRET_KEY
-
       - name: Execução script python (model.py)
         run: python SRC/model/model.py
 
@@ -36,6 +29,16 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
           commit_message: "up model.pkl"
+
+      - name: Conectar ao PostgreSQL e executar script
+        env:
+          PGHOST: ${{ secrets.PGHOST }}
+          PGPORT: ${{ secrets.PGPORT }}
+          PGUSER: ${{ secrets.PGUSER }}
+          PGPASSWORD: ${{ secrets.PGPASSWORD }}
+          PGDATABASE: ${{ secrets.PGDATABASE }}
+        run: |
+            python script.py
 
       - name: Execução script python (db_csv.py)
         run: python SRC/ETL/db_csv.py
