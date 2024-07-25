@@ -39,9 +39,6 @@ jobs:
         run: |
             python SRC/ETL/db_csv.py
 
-      - name: Execução script python (db_csv.py)
-        run: python SRC/ETL/db_csv.py
-
       - name: Realiza commit and push
         uses: stefanzweifel/git-auto-commit-action@v5
         with:
